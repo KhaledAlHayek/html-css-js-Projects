@@ -1,0 +1,67 @@
+body
+  padding: 0
+  margin: 0
+  font-family: "Poppins", sans-serif
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+main
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100vh
+  background-color: #f1f9ff
+  transition: all 3s ease-in
+  .clock
+    width: 800px
+    min-height: 200px
+    background-color: #fff
+    border-radius: 6px
+    position: relative
+    box-shadow: 1px 5px 5px #d6d6d6
+    user-select: none
+    .switch-mode
+      position: absolute
+      right: 10px
+      top: 10px
+      width: 50px
+      height: 50px
+      background-color: #000
+      border-radius: 50%
+      text-align: center
+      line-height: 50px
+      color: #fff
+      font-size: 22px
+      cursor: pointer
+    .units
+      padding: 40px 60px
+      display: flex
+      gap: 20px
+      justify-content: center
+      align-items: center
+      > div
+        width: 150px
+        height: 150px
+        border-radius: 6px
+        background-color: #008eff
+        text-align: center
+        padding: 20px
+        color: #fff
+        h3
+          font-size: 60px
+        span
+          font-weight: 500
+          font-size: 18px
+          text-transform: capitalize
+.dark
+  background-color: #2f3336
+  .clock
+    background-color: #282b2d
+    box-shadow: 1px 5px 5px #292929
+    .switch-mode
+      color: #000
+      background-color: #fff
+    .units
+      > div
+        background-color: #434b50
